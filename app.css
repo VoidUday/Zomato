@@ -38,6 +38,9 @@ body {
   border-radius: 5%;
 }
 
+.res-card:hover {
+  transition: 1s;
+}
 .res-img img {
   width: 280px;
   height: 186px;
