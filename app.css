@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  background-color: aquamarine;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-items {
+  margin-right: 80px;
+  padding: 20px;
+}
+.logo-img {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+}
+
+.nav-items ul {
+  display: flex;
+}
+
+.nav-items > ul > li {
+  padding: 15px;
+  list-style-type: none;
+  font-size: larger;
+}
+
+.res-card {
+  width: 280px;
+  height: auto;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5%;
+}
+
+.res-img img {
+  width: 280px;
+  height: 186px;
+  object-fit: cover;
+  border-radius: 5%;
+  gap: 12px;
+}
+
+.offer-text {
+  font-size: x-large;
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: -65px;
+  text-align: center;
+  color: white;
+}
+
+.res-name {
+  margin-top: -10px;
+  padding-left: 10px;
+}
+
+.res-name .rating h4 {
+  font-size: medium;
+  font-family: "Gilroy", sans-serif;
+}
+.rating {
+  margin-top: -20px;
+  padding-left: 10px;
+}
+.cuisine {
+  margin-top: -20px;
+  padding-left: 10px;
+}
+.location {
+  margin-top: -20px;
+  padding-left: 10px;
+}
+
+.cuisine h4,
+.location h4 {
+  font-weight: 400;
+  color: #787272;
+}
+
+.restaurant-container {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}

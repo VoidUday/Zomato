@@ -1,0 +1,35 @@
+{
+  "name": "zomato",
+  "version": "1.0.0",
+  "description": "Zomato Clone",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "Jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VoidUday/Zomato.git"
+  },
+  "keywords": [
+    "React",
+    "Frontend",
+    "Zomato",
+    "Clone"
+  ],
+  "author": "Uday Pratap Yadav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VoidUday/Zomato/issues"
+  },
+  "homepage": "https://github.com/VoidUday/Zomato#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
