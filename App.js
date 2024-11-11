@@ -1,26 +1,48 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { FaStar } from "react-icons/fa6";
+import { PiBagSimpleBold } from "react-icons/pi";
+import { BiSolidOffer } from "react-icons/bi";
+import { LuBadgeHelp } from "react-icons/lu";
+import { FaRegUser } from "react-icons/fa";
+import { FaBitbucket } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 
 import "./app.css";
 
 const Header = () => {
+  function clickBar() {}
   return (
-    <div className="header">
-      <div id="logo">
-        <img
-          className="logo-img"
-          src="https://cdn-images-1.medium.com/max/1200/1*sQa3vSQd9V4k-PeVNgGg0Q.png"
-        />
-      </div>
-      <div className="nav-items">
-        <ul>
-          <li className="items">Swiggy Corporate</li>
-          <li className="items">Offers</li>
-          <li className="items">Help</li>
-          <li className="items">Sign in</li>
-          <li className="items">Cart</li>
-        </ul>
+    <div className="res-container">
+      <div className="header">
+        <div id="logo">
+          <img
+            className="logo-img"
+            src="https://cdn-images-1.medium.com/max/1200/1*sQa3vSQd9V4k-PeVNgGg0Q.png"
+          />
+          <FaBars id="bar" className="three-bar" onClick={clickBar} />
+        </div>
+        <div className="nav-items">
+          <ul>
+            <li className="items">
+              <PiBagSimpleBold className="icon" /> Swiggy Corporate
+            </li>
+            <li className="items">
+              <BiSolidOffer className="icon" /> Offers
+            </li>
+            <li className="items">
+              <LuBadgeHelp className="icon" />
+              Help
+            </li>
+            <li className="items">
+              <FaRegUser className="icon" /> Sign in
+            </li>
+            <li className="items">
+              <FaBitbucket className="icon" />
+              Cart
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );
@@ -1061,7 +1083,7 @@ const Body = () => {
     <div className="body">
       <div className="restaurant-container">
         {resObj.map((res) => (
-          <RestaurantCard resData={res} />
+          <RestaurantCard key={res.card.card.info.id} resData={res} />
         ))}
       </div>
     </div>
