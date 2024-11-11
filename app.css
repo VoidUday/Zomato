@@ -3,21 +3,30 @@ body {
   padding: 0;
 }
 .header {
-  background-color: aquamarine;
-  height: 80px;
+  background-color: rgb(255, 255, 255);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-shadow: 0 15px 40px -20px rgba(40, 44, 63, 0.15);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
 }
 
+.body {
+  margin: 90px;
+}
 .nav-items {
   margin-right: 80px;
   padding: 20px;
 }
-.logo-img {
+#logo .logo-img {
   width: 60px;
   height: 60px;
   margin: 10px;
+  margin-left: 50px;
 }
 
 .nav-items ul {
@@ -27,7 +36,10 @@ body {
 .nav-items > ul > li {
   padding: 15px;
   list-style-type: none;
-  font-size: larger;
+  font-size: 16;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 500;
+  white-space: 1px;
 }
 
 .res-card {
@@ -51,15 +63,16 @@ body {
 
 .offer-text {
   font-size: x-large;
+  font-weight: 900;
   font-weight: bolder;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-top: -65px;
+  font-family: "Gilroy", sans-serif;
+  margin-top: -45px;
   text-align: center;
   color: white;
 }
 
 .res-name {
-  margin-top: -10px;
+  margin-top: -5px;
   padding-left: 10px;
 }
 
@@ -92,4 +105,18 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+}
+.rating-heading {
+  font-size: medium;
+  font-family: "Gilroy", sans-serif;
+  padding: auto;
+}
+
+.rating-icons {
+  width: 14px;
+  height: 15px;
+  background-color: green;
+  border-radius: 50%;
+  size: 10px;
+  color: white;
 }
